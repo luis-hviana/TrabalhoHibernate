@@ -58,7 +58,7 @@ public class Hibernate {
         a5.Email = new ArrayList<>();
         a5.Email.add(em5);
         
-        //acon.salvarAutor(a5);
+        //acon.salvarAutor(a2);
  
         
         /*
@@ -77,6 +77,13 @@ public class Hibernate {
         }
         */
         
+        /*
+        List<Autor> autorHQL = acon.consultaAutor25HQL();
+        
+        for (int i = 0; i < autorHQL.size(); i++) {
+            System.out.println("ID: " + autorHQL.get(i).getId() + " - Nome: " + autorHQL.get(i).getNome());
+        }
+        */
         // _____________________________________EDITORA____________________________
         Editora e1 = new Editora();
         e1.setNome("Livros S.A");
@@ -109,41 +116,42 @@ public class Hibernate {
         
 
         Livro l1 = new Livro();
-        l1.setTitulo("Titilo fake");
+        l1.setTitulo("Sherlock Holmes");
         l1.setPreco(100000);
-        l1.setEdicao("Pedro");
+        l1.setEdicao("Pedro das Neves");
         l1.setEditora(e1);
         l1.Autor = new ArrayList<>();
         l1.Autor.add(a1);
         
         Livro l2 = new Livro();
-        l2 .setTitulo("Titilo fake");
-        l2 .setPreco(100000);
-        l2 .setEdicao("Pedro");
-        l2 .setEditora(e1);
-        l2 .Autor = new ArrayList<>();
-        l2 .Autor.add(a1);
+        l2.setTitulo("O morro dos ventos uivantes");
+        l2.setPreco(100000);
+        l2.setEdicao("João Francisco");
+        l2.setEditora(e1);
+        l2.Autor = new ArrayList<>();
+        l2.Autor.add(a1);
+        l2.Autor.add(a2);
         
         Livro l3 = new Livro();
-        l3.setTitulo("Titilo fake");
+        l3.setTitulo("Mulheres que correm com os lobos");
         l3.setPreco(100000);
-        l3.setEdicao("Pedro");
+        l3.setEdicao("Maria de Paula");
         l3.setEditora(e1);
         l3.Autor = new ArrayList<>();
         l3.Autor.add(a1);
         
         Livro l4 = new Livro();
-        l4.setTitulo("Titilo fake");
+        l4.setTitulo("o Holocausto");
         l4.setPreco(100000);
-        l4.setEdicao("Pedro");
+        l4.setEdicao("Vania Aparecida");
         l4.setEditora(e1);
         l4.Autor = new ArrayList<>();
         l4.Autor.add(a1);
         
         Livro l5 = new Livro();
-        l5.setTitulo("Titilo fake");
+        l5.setTitulo("O poder do hábito");
         l5.setPreco(100000);
-        l5.setEdicao("Pedro");
+        l5.setEdicao("Danilo Guedes");
         l5.setEditora(e1);
         l5.Autor = new ArrayList<>();
         l5.Autor.add(a1);

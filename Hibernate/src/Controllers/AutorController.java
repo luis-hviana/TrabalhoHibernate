@@ -43,15 +43,15 @@ public class AutorController {
     
     public List consultaTodosAutoresHQL() {
         em.getTransaction().begin();
-        String consulta = "from Autor";
+        String consulta = "FROM Autor";
         Query q = em.createQuery(consulta);
         List resultado = q.getResultList();
         return resultado;
     }
     
-    public List consultaAutor25HQL(int id) {
+    public List consultaAutor25HQL() {
         em.getTransaction().begin();
-        String consulta = "from Autor autor where id_pessoa =" + id;
+        String consulta = "FROM Autor WHERE id_pessoa =" + 25;
         Query q = em.createQuery(consulta);
         List resultado = q.getResultList();
         return resultado;

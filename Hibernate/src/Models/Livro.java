@@ -43,7 +43,7 @@ public class Livro {
     cascade = CascadeType.ALL,
     orphanRemoval = true
     )
-    @JoinColumn(name = "IDFK_AUTOR")
+    @JoinColumn(name = "IDFK_LIVRO")
     public List<Autor> Autor;
    
     public Livro() {
